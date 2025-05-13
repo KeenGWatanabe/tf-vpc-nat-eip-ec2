@@ -13,7 +13,7 @@ resource "aws_nat_gateway" "nat" {
     Name = "${var.name_prefix}-nat"
   }
 
-  depends_on = [aws_internet_gateway.gw]
+  depends_on = [aws_internet_gateway.igw]
 }
 
 # Private route table with NAT gateway route
