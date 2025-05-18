@@ -1,11 +1,11 @@
-terraform {
-  backend "s3" {
-    bucket = "grp-4.tfstate-backend.com"
-    key = "vpc/terraform.tfstate"
-    region = "us-east-1"
-    dynamodb_table = "terraform-state-locks"  # Critical for locking
-  }
-}
+# terraform {
+#   backend "s3" {
+#     bucket = "grp-4.tfstate-backend.com"
+#     key = "vpc/terraform.tfstate"
+#     region = "us-east-1"
+#     dynamodb_table = "terraform-state-locks"  # Critical for locking
+#   }
+# }
 
 
 data "aws_caller_identity" "current" {}
