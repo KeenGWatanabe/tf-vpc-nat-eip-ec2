@@ -10,7 +10,7 @@
 
 data "aws_caller_identity" "current" {}
 data "aws_region" "current" {}
-data "aws_availability_zones" "available" {  # <-- This was missing
+data "aws_availability_zones" "available" { 
   state = "available"
 }
 # --- VPC & Networking ---
