@@ -8,7 +8,7 @@ private_subnets = [
   "subnet-017d2aa42efd32676",
   "subnet-028fc73b027318902",
 ]
-public_subnets = [
+public_subnets = [ 
   "subnet-0eb0b39150ae1027b",
   "subnet-064fda2b4a40daf50",
 ]
