@@ -3,15 +3,16 @@ This VPC is deploy for ECS containing the taskmgr app
 
 # LATEST OUTPUT(20250524am):
 
-igw_id = "igw-0f7046b096f8e20cd"
+
+igw_id = "igw-02ededd455cfafb5e"
 private_subnets = [
-  "subnet-017d2aa42efd32676",
-  "subnet-028fc73b027318902",
+  "subnet-0e2c8d8300f1dfb40",
+  "subnet-0ab1472ba20192fb7",
 ]
-public_subnets = [ 
-  "subnet-0eb0b39150ae1027b",
-  "subnet-064fda2b4a40daf50",
+public_subnets = [
+  "subnet-028bd426e6a71682a",
+  "subnet-0be9c3ede8bcb794c",
 ]
-vpc_eip = "eipalloc-036415ab34c82d2a0"
-vpc_id = "vpc-08d55530f71ab9bfa"
-vpc_nat = "nat-0b65a2af1e03dd4b1"
+vpc_eip = "eipalloc-01dffedaa0a39685b"
+vpc_id = "vpc-0e67539baf1a9b502"
+vpc_nat = "nat-012013a15b0c84cbe"
