@@ -16,3 +16,6 @@ public_subnets = [
 vpc_eip = "eipalloc-01dffedaa0a39685b"
 vpc_id = "vpc-0e67539baf1a9b502"
 vpc_nat = "nat-012013a15b0c84cbe"
+
+networking diagram
+https://app.diagrams.net/?splash=0#G10SF9Ql_S8yiikoBHy1MIR5iLKDDhCGOZ#%7B%22pageId%22%3A%22Ht1M8jgEwFfnCIfOTk4-%22%7D
