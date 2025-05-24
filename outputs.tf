@@ -11,7 +11,7 @@ output "private_subnets" {
 value = aws_subnet.private[*].id
 }
 
-output "secretsmanager endpoint" {
+output "secretsmanager_endpoint" {
 value = aws_vpc_endpoint.secretsmanager.id
 }
 
