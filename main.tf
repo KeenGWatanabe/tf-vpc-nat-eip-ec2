@@ -72,4 +72,15 @@ resource "aws_route_table_association" "public" {
 }
 
 
-
+#create EC2 connection
+resource "aws_instance" "ec2" {
+  count = var.settings.ec2.count
+  ami = data.aws_ami.amazon_linux.id
+  instance_type = var.settings.ec2.instance_type
+  subnet_id = aws_subnet.public[count.index].id
+  key_name = var.aws_key_pair
+  vpc_security_group_ids = [aws_security_group.ec2_sg.id]
+  tags ={
+    Name = "ec2_${count.index}"
+  }
+}
