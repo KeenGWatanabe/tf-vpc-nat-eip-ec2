@@ -15,6 +15,10 @@ output "secretsmanager_endpoint" {
 value = aws_vpc_endpoint.secretsmanager.id
 }
 
+# Output the my_ip value
+output "my_ip" {
+  value = local.my_public_ip
+}
 # output "vpc_nat" {
 #   description = "The NAT Gateway ID"
 #   value       = aws_nat_gateway.nat.id

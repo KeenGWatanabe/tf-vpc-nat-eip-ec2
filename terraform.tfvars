@@ -1,0 +1,1 @@
+aws_key_pair = "roger_kp"
