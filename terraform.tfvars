@@ -1,3 +1,3 @@
 aws_key_pair = "roger_kp"
 
-name_prefix = "taskmgr"
+name_prefix = "secrets"
