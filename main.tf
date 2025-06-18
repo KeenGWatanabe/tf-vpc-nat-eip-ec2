@@ -1,9 +1,9 @@
 terraform {
   backend "s3" {
-    bucket = "taskmgr.tfstate-backend.com"
-    key = "vpc/terraform.tfstate"
+    bucket = "eks.tfstate-backend.com"
+    key = "eks-vpc/terraform.tfstate"
     region = "us-east-1"
-    dynamodb_table = "taskmgr-terraform-state-locks"  # Critical for locking
+    dynamodb_table = "eks-terraform-state-locks"  # Critical for locking
   }
 }
 
