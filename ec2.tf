@@ -21,7 +21,7 @@ resource "aws_instance" "ec2_web" {
   ami = data.aws_ami.amazon_linux.id
   instance_type = var.settings.web_app.instance_type
   subnet_id = aws_subnet.public[count.index].id
-  #key_name = var.aws_key_pair
+  key_name = var.aws_key_pair
   vpc_security_group_ids = [aws_security_group.web_app_sg.id]
   tags ={
     Name = "${var.name_prefix}_web_${count.index}"
