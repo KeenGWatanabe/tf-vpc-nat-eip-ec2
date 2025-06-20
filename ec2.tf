@@ -29,6 +29,7 @@ data "aws_ami" "amazon_linux" {
 #create EC2 roger_web
 resource "aws_instance" "ec2_web" {
   count = var.settings.web_app.count
+
   ami = data.aws_ami.amazon_linux.id
   instance_type = var.settings.web_app.instance_type
   subnet_id = aws_subnet.public[count.index].id
