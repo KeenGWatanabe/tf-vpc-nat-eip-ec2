@@ -22,6 +22,7 @@ variable "settings" {
     "web_app" = {
       count         = 1
       instance_type = "t2.micro"
+      region        = "ap-southeast-1"
     }
   }
 }

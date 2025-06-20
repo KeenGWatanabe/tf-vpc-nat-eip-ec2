@@ -1,4 +1,4 @@
-#create Linux ami
+# create Linux ami
 data "aws_ami" "amazon_linux" {
   most_recent = "true"
   owners = ["amazon"]
@@ -15,6 +15,17 @@ data "aws_ami" "amazon_linux" {
     values = ["x86_64"]
   }
 }
+# data "aws_ssm_parameter" "amazon_linux2" {
+#   name = "/aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2"
+# }
+# data "aws_ami" "amazon_linux" {
+#   most_recent = true
+#   owners      = ["amazon"]
+#   filter {
+#     name   = "image-id"
+#     values = [data.aws_ssm_parameter.amazon_linux2.value]
+#   }
+# }
 #create EC2 roger_web
 resource "aws_instance" "ec2_web" {
   count = var.settings.web_app.count
