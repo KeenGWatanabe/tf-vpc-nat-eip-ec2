@@ -15,19 +15,19 @@ output "secretsmanager_endpoint" {
 value = aws_vpc_endpoint.secretsmanager.id
 }
 
-# Output the my_ip value
-output "my_ip" {
-  value = local.my_public_ip
+# # Output the my_ip value
+# output "my_ip" {
+#   value = local.my_public_ip
+# }
+output "vpc_nat" {
+  description = "The NAT Gateway ID"
+  value       = aws_nat_gateway.nat.id
 }
-# output "vpc_nat" {
-#   description = "The NAT Gateway ID"
-#   value       = aws_nat_gateway.nat.id
-# }
 
-# output "vpc_eip" {
-#   description = "The Elastic IP associated with NAT"
-#   value       = aws_eip.nat.id
-# }
+output "vpc_eip" {
+  description = "The Elastic IP associated with NAT"
+  value       = aws_eip.nat.id
+}
 
 
 # output "igw_id" {

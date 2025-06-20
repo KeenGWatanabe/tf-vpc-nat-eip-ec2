@@ -3,16 +3,16 @@ variable "name_prefix" {
   type        = string
 }
 
-variable "aws_key_pair" {
-  description = "keypair name for instance"
-  type = string
-  sensitive = true
-}
-variable "my_ip" {
-  description = "Your IP address"
-  type = string
-  sensitive = true
-}
+# variable "aws_key_pair" {
+#   description = "keypair name for instance"
+#   type = string
+#   sensitive = true
+# }
+# variable "my_ip" {
+#   description = "Your IP address"
+#   type = string
+#   sensitive = true
+# }
 
 
 variable "settings" {
