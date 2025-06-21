@@ -8,8 +8,8 @@
 #         Effect   = "Allow"
 #         Action   = "ssm:GetParameter"
 #         Resource = [
-#           "arn:aws:ssm:ap-southeast-1::parameter/aws/service/ami-amazon-linux-latest/*",
-#           "arn:aws:ssm:ap-southeast-1::parameter/*"
+#           "arn:aws:ssm:us-east-1::parameter/aws/service/ami-amazon-linux-latest/*",
+#           "arn:aws:ssm:us-east-1::parameter/*"
 #         ]
 #       }
 #     ]

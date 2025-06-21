@@ -2,12 +2,12 @@ terraform {
   backend "s3" {
     bucket = "secrets.tfstate-backend.com"
     key = "vpc/terraform.tfstate"
-    region = "ap-southeast-1"
+    region = "us-east-1"
     dynamodb_table = "secrets-terraform-state-locks"  # Critical for locking
   }
 }
 provider "aws" {
-  region = "ap-southeast-1"
+  region = "us-east-1"
 }
 
 
