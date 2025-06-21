@@ -2,7 +2,7 @@
 
 resource "aws_vpc_endpoint" "secretsmanager" {
   vpc_id              = aws_vpc.main.id
-  service_name        = "com.amazonaws.ap-southeast-1.secretsmanager"
+  service_name        = "com.amazonaws.us-east-1.secretsmanager"
   vpc_endpoint_type   = "Interface"
   subnet_ids          = [aws_subnet.private[0].id,aws_subnet.private[1].id]  # Your private subnet(s)
   security_group_ids  = [aws_security_group.vpc_endpoint.id]

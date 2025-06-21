@@ -1,21 +1,25 @@
 This VPC is deploy for ECS containing the taskmgr app
+# branch:
+`secrets`: no EC2
+`main`: has EC2
+
 ![alt text](/images/image.png)
 networking diagram
 https://app.diagrams.net/?splash=0#G10SF9Ql_S8yiikoBHy1MIR5iLKDDhCGOZ#%7B%22pageId%22%3A%22Ht1M8jgEwFfnCIfOTk4-%22%7D
-# LATEST OUTPUT(20250620pm):
-
+# LATEST OUTPUT(20250622am):
 # Outputs:
 
 private_subnets = [
-  "subnet-05968ae3190280551",
-  "subnet-0a4deba77626350bf",
+  "subnet-0df485dc22350894b",
+  "subnet-09dd6aad1a79c6766",
 ]
 public_subnets = [
-  "subnet-08a6e60e8cff4be47",
-  "subnet-09aa4ed6dfd22a807",
+  "subnet-0687a71703ee4c62a",
+  "subnet-021f64fbfa79f0f0c",
 ]
-secretsmanager_endpoint = "vpce-023222d4db689e620"
-vpc_eip = "eipalloc-042c1d659e372aea1"
-vpc_id = "vpc-04ef54b764809f478"
-vpc_nat = "nat-0863418df70160b10"
+secretsmanager_endpoint = "vpce-09bf2152745997d44"
+vpc_eip = "eipalloc-04f545893277ce1ec"
+vpc_id = "vpc-09d76b3df51d9aaa3"
+vpc_nat = "nat-0db6755e35670ec72"
+
 
