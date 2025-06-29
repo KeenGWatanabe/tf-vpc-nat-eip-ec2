@@ -1,3 +1,3 @@
 # aws_key_pair = "rger_kp"
 
-name_prefix = "secrets"
+name_prefix = "thunder"

@@ -1,9 +1,9 @@
 terraform {
   backend "s3" {
-    bucket = "secrets.tfstate-backend.com"
-    key = "vpc/terraform.tfstate"
+    bucket = "thunder.tfstate-backend.com"
+    key = "thundervpc/terraform.tfstate"
     region = "us-east-1"
-    dynamodb_table = "secrets-terraform-state-locks"  # Critical for locking
+    dynamodb_table = "thunder-terraform-state-locks"  # Critical for locking
   }
 }
 provider "aws" {
