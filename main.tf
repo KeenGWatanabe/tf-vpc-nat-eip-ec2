@@ -1,9 +1,9 @@
 terraform {
   backend "s3" {
-    bucket = "thunder.tfstate-backend.com"
-    key = "thundervpc/terraform.tfstate"
+    bucket = "eks.tfstate-backend.com"
+    key = "vpc-eks/terraform.tfstate"
     region = "us-east-1"
-    dynamodb_table = "thunder-terraform-state-locks"  # Critical for locking
+    dynamodb_table = "eks-terraform-state-locks"  # Critical for locking
   }
 }
 provider "aws" {
@@ -32,7 +32,7 @@ resource "aws_subnet" "public" {
   cidr_block        = "10.0.${count.index}.0/24"
   #availability_zone = "us-east-1${count.index == 0 ? "a" : "b"}" 
   availability_zone = element(data.aws_availability_zones.available.names, count.index)
-  # map_public_ip_on_launch = true  # 🔥 Critical for ECS tasks to get public IPs!
+  map_public_ip_on_launch = true  # 🔥 Critical for ECS tasks to get public IPs!
   tags = {
     Name = "${var.name_prefix}-public-subnet-${count.index}"
   }
