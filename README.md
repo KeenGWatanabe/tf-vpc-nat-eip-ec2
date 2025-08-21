@@ -6,20 +6,20 @@ This VPC is deploy for ECS containing the taskmgr app
 ![alt text](/images/image.png)
 networking diagram
 https://app.diagrams.net/?splash=0#G10SF9Ql_S8yiikoBHy1MIR5iLKDDhCGOZ#%7B%22pageId%22%3A%22Ht1M8jgEwFfnCIfOTk4-%22%7D
-# LATEST OUTPUT(20250629pm):
+# LATEST OUTPUT(20250825pm):
 # Outputs:
 
 private_subnets = [
-  "subnet-0c209c728ccb961be",
-  "subnet-04a90d4ee3d0490e6",
+  "subnet-01cc8e73c26738492",
+  "subnet-075cff3f5a7e08397",
 ]
 public_subnets = [
-  "subnet-037d82b9181bdf3fb",
-  "subnet-003232e969fe8816f",
+  "subnet-0e7594acacd779481",
+  "subnet-0fce9162a3a35229e",
 ]
-secretsmanager_endpoint = "vpce-035c4153a7bbbd77e"
-vpc_eip = "eipalloc-0c4529673d6288cbf"
-vpc_id = "vpc-0566bdf61b0703fe0"
-vpc_nat = "nat-0c8ca9f3cd8d456b9"
+secretsmanager_endpoint = "vpce-067f98111d6f56976"
+vpc_eip = "eipalloc-0af01f2304863971b"
+vpc_id = "vpc-06ef77a9c78893200"
+vpc_nat = "nat-04e1ca72da9c05bb3"
 
 
