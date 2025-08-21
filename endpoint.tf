@@ -7,6 +7,9 @@ resource "aws_vpc_endpoint" "secretsmanager" {
   subnet_ids          = [aws_subnet.private[0].id,aws_subnet.private[1].id]  # Your private subnet(s)
   security_group_ids  = [aws_security_group.vpc_endpoint.id]
   private_dns_enabled = true  # Critical for DNS resolution
+  tags = {
+    Name = "${var.name_prefix}-secretsmanager-endpoint"
+  }
 }
 
 resource "aws_security_group" "vpc_endpoint" {
